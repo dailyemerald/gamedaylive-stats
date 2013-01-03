@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Chat</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="/css/base.css" rel="stylesheet">
+    <link href="/css/skeleton.css" rel="stylesheet">
+    <link href="/css/layout.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div id="wrapper">
+
+      <input id="name" type="text" placeholder="What's your name?"></input>
+      
+      <textarea id="message" type="text" placeholder="Post something..."></textarea>
+      <button type="submit" id="send">Send</button>
+
+      <div id="status">Waiting for server...</div>
+
+    	<ul id="messages">
+      </ul>
+
+    </div>
+	
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.2/underscore-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/1.7.2/moment.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
